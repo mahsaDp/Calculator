@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css">
+        <link rel="icon" type="image/x-icon" href="assets/calc-favicon2.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="calculator flex">
+            <div class="calculator__header grid">
+                <div class="clocks flex">
+                    <div class="timer"></div>
+                    <div class="history">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                </div>
+                <div class="change-mood grid">
+                    <img src="assets/light.png" alt="light-mood">
+                    <img src="assets/dark.jpg" alt="dark-mood">
+                    <div class="change-mood__btn"></div>
+                </div>
+            </div>
+
+            <div class="calculator__result flex">
+                <textarea  class="showResult" placeholder="0"></textarea>
+            </div>
+            <div class="calculator__buttons grid">
+                <button class="btn C-key">C</button>
+                <button class="btn plusMinus-key">+/-</button>
+                <button class="btn Percentage-key">%</button>
+                <button class="btn operator-btn">/</button>
+                <button class="btn number-btn">7</button>
+                <button class="btn number-btn">8</button>
+                <button class="btn number-btn">9</button>
+                <button class="btn operator-btn">*</button>
+                <button class="btn number-btn">4</button>
+                <button class="btn number-btn">5</button>
+                <button class="btn number-btn">6</button>
+                <button class="btn operator-btn">-</button>
+                <button class="btn number-btn">1</button>
+                <button class="btn number-btn">2</button>
+                <button class="btn number-btn">3</button>
+                <button class="btn operator-btn">+</button>
+                <button class="btn back-key">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </button>
+                <button class="btn number-btn">0</button>
+                <button class="btn number-btn">.</button>
+                <button class="btn result-key">=</button>
+            </div>
+        </div>
+
+
+        <script src="calculator.js"></script>
+    </body>
+</html>

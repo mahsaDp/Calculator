@@ -1,0 +1,23 @@
+
+
+.dark{
+    background-color: #1a1c23!important;
+    color: white;
+}
+
+.dark .calculator__buttons{
+    background-color: #242931;
+}
+
+.dark .btn{
+    color: white;
+}
+
+.dark .showResult{
+    background-color: #1a1c23;
+    color: white;
+}
+
+.dark .change-mood{
+    background-color: #fafab3;
+}
