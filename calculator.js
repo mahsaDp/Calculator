@@ -16,7 +16,7 @@ const result=document.querySelector('.result-key')
 const plusMinus=document.querySelector('.plusMinus-key')
 const back=document.querySelector('.back-key')
 const Percentage=document.querySelector('.Percentage-key')
-const btn= document.querySelectorAll('.btn')
+// const btn= document.querySelectorAll('.btn')
 
 
 
@@ -56,14 +56,17 @@ operatorKeys.forEach(operator =>{
     })
 })
 
+//c-key
 clear.addEventListener('click', ()=>{
     input.value= ""
 })
 
+//result
 result.addEventListener('click', ()=>{
     input.value= eval(input.value)
 })
 
+//plus-minus
 plusMinus.addEventListener('click', ()=>{
     input.classList.toggle('Negative')
     if(input.className.includes('Negative')){
@@ -74,14 +77,23 @@ plusMinus.addEventListener('click', ()=>{
     }
 })
 
+//back
 back.addEventListener('click', ()=>{
     input.value= input.value.slice(0, (input.value.length-1))
 })
 
+// % operator
 Percentage.addEventListener('click', ()=>{
-    let secondNumber = input.value.slice(input.value.length-1)
-    let mainNumber = input.value.slice(0,input.value.length-2)
-    input.value = input.value.slice(0,input.value.length-1)
-    input.value += mainNumber * secondNumber / 100
+    let value=input.value
+    if (Number(value)){
+        input.value = Number(value)/100
+    }
+    else {
+        let secondNumber = input.value.slice(input.value.length-1)
+        let mainNumber = input.value.slice(0,input.value.length-2)
+        input.value = input.value.slice(0,input.value.length-1)
+        input.value += mainNumber * secondNumber / 100
+    }
+
 })
 
