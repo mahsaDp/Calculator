@@ -114,7 +114,7 @@ body{
 }
 
 .calculator__result{
-    height: 200px;
+    height: 180px;
     align-items: flex-end;
     justify-content: flex-end;
     gap: 5px;

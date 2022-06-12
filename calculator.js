@@ -16,6 +16,7 @@ const result=document.querySelector('.result-key')
 const plusMinus=document.querySelector('.plusMinus-key')
 const back=document.querySelector('.back-key')
 const Percentage=document.querySelector('.Percentage-key')
+const Dot=document.querySelector('.dot-btn')
 // const btn= document.querySelectorAll('.btn')
 
 
@@ -49,6 +50,14 @@ numberKeys.forEach(num =>{
         input.value += num.textContent
     })
 })
+
+
+Dot.addEventListener('click', ()=>{
+    // if (input.value.includes(".")) alert(`is not allowed  "." Already entered`)
+    // else input.value += Dot.textContent
+    input.value += Dot.textContent
+})
+
 
 operatorKeys.forEach(operator =>{
     operator.addEventListener('click', ()=>{
