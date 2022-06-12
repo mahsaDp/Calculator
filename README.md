@@ -25,4 +25,4 @@ Html, Css, JavaScript
 
 
 ## Contact me
-[mahsaa.emadi@gmail.com](mahsaa.emadi@gmail.com)
+mahsaa.emadi@gmail.com <a href="mailto:mahsaa.emadi@gmail.com?"></a>
